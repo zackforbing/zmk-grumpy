@@ -72,7 +72,7 @@ combo_##NAME { \
         COMBO(delword, &kp LC(BSPC), 5 7)
 /* alternative shifting */
         COMBO(Sq, &kp LS(Q), 1 2 26)
-        COMBO(Sz, &kp LS(Z), 18 19 26)
+        COMBO(Sz, &kp LS(Z), 19 20 26)
         COMBO(Sv, &kp LS(V), 0 1 26)
         COMBO(Ssch, &macro_shifted_sch, 0 2 26)
         COMBO(Sw, &kp LS(W), 0 26)
