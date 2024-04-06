@@ -19,7 +19,7 @@
             bindings = <
                                &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
                 &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                &my_lt NUM SQT &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol        &my_lt FUN ENTER
+                &my_lt NUM SQT &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol        &my_lt FUN TAB
                                                                             &my_lt NAV SPACE &my_lt SYM E
             >;
         };
@@ -29,8 +29,8 @@
             bindings = <
                                &kp N9         &kp N8         &kp N7         &kp ASTERISK   &kp PLUS       &kp N7         &kp N8         &kp N9
                 &hl LCTRL N0   &hl LALT N6    &hl LGUI N5    &hl LSHFT N4   &hl RALT SLASH &kp MINUS      &kp N4         &kp N5         &kp N6         &kp DOT
-                &trans         &kp N3         &kp N2         &kp N1                                       &kp N1         &kp N2         &kp N3         &kp N0
-                                                                            &trans         &kp E
+                &trans         &kp N3         &kp N2         &kp N1                                       &kp N1         &kp N2         &kp N3         &kp E
+                                                                            &trans         &kp N0
             >;
         };
         navigation {
@@ -38,7 +38,7 @@
 
             bindings = <
                                &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
-                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
+                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &none          &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
                 &trans         &kp HOME       &kp PG_DN      &kp END                                       &kp HOME       &kp PG_UP      &kp END        &trans
                                                                              &trans         &trans
             >;

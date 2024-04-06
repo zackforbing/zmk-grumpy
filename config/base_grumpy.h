@@ -19,17 +19,16 @@
 
 / {
     macros {
-        macro_sch: macro_sch {
-            label = "Macro_SCH";
+        macro_shiftable_sch: macro_shiftable_sch {
+            label = "Macro_shiftable_sch";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp S &kp C &kp H>;
-        };
-        macro_shifted_sch: macro_shifted_sch {
-            label = "Macro_Sch";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kp LS(S) &kp C &kp H>;
+            bindings = <
+                    &macro_tap &kp S
+                    &macro_release &kp RSHIFT
+                    &macro_tap &kp C &kp H
+            >;
+            tap-ms = <10>;
         };
     };
 };
@@ -146,7 +145,7 @@ combo_##NAME { \
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <100>;
             // global-quick-tap;
             bindings = <&mo &kp>, <&kp>;
