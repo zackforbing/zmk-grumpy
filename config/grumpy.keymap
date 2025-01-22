@@ -213,8 +213,6 @@
 //                      \  26  /    \  27  /
 //                       ------      ------
 
-/ {
-
     keymap {
         compatible = "zmk,keymap";
 
