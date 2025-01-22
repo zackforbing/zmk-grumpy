@@ -4,6 +4,6 @@ name: grumpy
 type: shield
 url: https://github.com/weteor/grumpy
 requires: 
-  - seeeduino_xiao_rp2040
+  - seeeduino_xiao_ble
 features:
   - keys
