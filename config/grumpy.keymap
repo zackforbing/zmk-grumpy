@@ -121,31 +121,31 @@
     };
 
     behaviors {
-        hm: HOMEROW_MODS {
+        hml: HOMEROW_L_MODS {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW_L_MODS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <190>;
             flavor = "balanced";
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <100>;
         };
 
-        hs: HOMEROW_SHIFT {
+        hsl: HOMEROW_L_SHIFT {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_SHIFT";
+            label = "HOMEROW_L_SHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <190>;
             flavor = "balanced";
             require-prior-idle-ms = <0>;
         };
 
-        comma_semicolon: comma_semicolon {
+        com_scln: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMICOLON";
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
@@ -154,13 +154,46 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        period_colon: period_colon {
+        pd_cln: period_colon {
             compatible = "zmk,behavior-mod-morph";
             label = "PERIOD_COLON";
             bindings = <&kp PERIOD>, <&kp COLON>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hmr: HOMEROW_R_MODS {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_R_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <190>;
+            flavor = "balanced";
+            require-prior-idle-ms = <100>;
+        };
+
+        hsr: HOMEROW_R_SHIFT {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_R_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <190>;
+            flavor = "balanced";
+            require-prior-idle-ms = <0>;
+        };
+
+        bksp_del: bksp_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BKSP_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -191,7 +224,7 @@
             bindings = <
                                &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
                 &hml LCTRL R    &hml LALT S     &hml LGUI T     &hsl LSHFT H    &mt RALT K     &mt RALT X     &hsr RSHFT N    &hmr RGUI A     &hmr LALT I     &hmr RCTRL O
-                &lt NUM SQT &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol        &lt FUN ENTER
+                &lt NUM SQT &kp C          &kp G          &kp D                                        &kp M          &com_scln        &pd_cln        &lt FUN ENTER
                                                                             &lt NAV SPACE &lt SYM E
             >;
         };
