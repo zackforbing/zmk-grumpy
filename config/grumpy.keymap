@@ -216,9 +216,9 @@
         aptmak {
             label = "APT";
             bindings = <
-              &kp W        &kp F        &kp P         &kp B          &kp J       &kp L         &kp U        &kp Y
-&hml LCTRL R  &hml LALT S  &hml LGUI T  &hsl LSHFT H  &hml RALT K     &hmr RALT X  &hsr RSHFT N  &hmr RGUI A  &hmr LALT I  &hmr RCTRL O
-&lt NUM SQT   &kp C        &kp G        &kp D                                    &kp M         &com_scln    &pd_cln      &lt FUN ENTER
+              &kp W        &kp F        &kp P         &kp B          &kp J        &kp L         &kp U        &kp Y
+&hml LCTRL R  &hml LALT S  &hml LGUI T  &hsl LSHFT H  &hml RALT K    &hmr RALT X  &hsr RSHFT N  &hmr RGUI A  &hmr LALT I  &hmr RCTRL O
+&lt NUM SQT   &kp C        &kp G        &kp D                                     &kp M         &com_scln    &pd_cln      &lt FUN ENTER
                                                       &lt NAV SPACE  &lt SYM E
             >;
         };
@@ -226,10 +226,10 @@
         numbers {
             label = "NUM";
             bindings = <
-               &kp N9        &kp N8        &kp N7         &kp ASTERISK    &kp PLUS   &kp N7  &kp N8  &kp N9
-&hml LCTRL N0  &hml LALT N6  &hml LGUI N5  &hsl LSHFT N4  &hml RALT SLASH  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp DOT
-&trans         &kp N3        &kp N2        &kp N1                                    &kp N1  &kp N2  &kp N3  &kp N0
-                                                          &trans          &kp E
+                   &kp N7              &kp N8        &kp N9               &kp PLUS         &kp KP_MULTIPLY  &kp N7                     &kp N8             &kp N9
+&hml LCTRL PERIOD  &hml LALT NUMBER_4  &hml LGUI N5  &hsl LSHFT NUMBER_6  &hml RALT MINUS  &kp KP_DIVIDE    &hsr RIGHT_SHIFT NUMBER_4  &hmr RIGHT_GUI N5  &hmr RALT NUMBER_6  &hmr RCTRL DOT
+&trans             &kp NUMBER_1        &kp N2        &kp NUMBER_3                                           &kp N1                     &kp N2             &kp N3              &kp N0
+                                                                          &kp N0           &kp E
             >;
         };
 
